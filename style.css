@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100%;
+    background-color: blanchedalmond;
+}
+#espaceJeux {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin: 30px auto;
+    background-color: black;
+}
+#pacman {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    width: 150px;
+    height: 150px;
+}
+.pacmanTop {
+    top: 0;
+    border-radius: 100px 100px 0 0;
+    animation: spinTop .5s infinite linear;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(134, 134, 7);
+}
+.pacmanBottom {
+    top: 0;
+    border-radius: 0 0 100px 100px;
+    animation: spinBottom .5s infinite linear;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(134, 134, 7);
+}
+@keyframes spinTop {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-35deg);
+    }
+}
+@keyframes spinBottom {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+}
